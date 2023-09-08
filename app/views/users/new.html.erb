@@ -1,3 +1,6 @@
+<div class="wrapper">
+<%= image_tag('logo.svg', alt: 'logo Image', class: 'logo') %>
+
 <h1>Login</h1>
 <%= form_with model: @user, url: users_path, method: :post do |f| %>
   <div class="field">
@@ -12,4 +15,4 @@
     <%= f.submit "Log In" %>
   </div>
 <% end %>
-
+</div>

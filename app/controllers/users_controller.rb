@@ -7,7 +7,7 @@ class UsersController < ApplicationController
      @user = User.new(user_params)
     if @user.save
       flash[:success] = 'User registered successfully!'
-      redirect_to new_user_path
+      redirect_to '/404', status: :moved_permanently
     else
       render 'new'
     end
