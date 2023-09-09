@@ -1,11 +1,13 @@
-<div class="wrapper">
+<div class="custom-wrapper">
 <%= image_tag('logo.svg', alt: 'logo Image', class: 'logo') %>
+<div class="content">
+<h2>Welcome!</h2>
+<p class="text">Login to continue.</p>
 
-<h1>Login</h1>
 <%= form_with model: @user, url: users_path, method: :post do |f| %>
-  <div class="field">
+  <div class="field-email">
     <%= f.label :email %>
-    <%= f.email_field :email %>
+    <%= f.email_field :email, placeholder: 'example@email.com', required: true, autocomplete: 'off', autofocus: 'autofocus'%>
   </div>
   <div class="field">
     <%= f.label :password %>
@@ -15,4 +17,5 @@
     <%= f.submit "Log In" %>
   </div>
 <% end %>
+</div>
 </div>
