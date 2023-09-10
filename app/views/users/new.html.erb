@@ -1,21 +1,56 @@
 <div class="custom-wrapper">
-<%= image_tag('logo.svg', alt: 'logo Image', class: 'logo') %>
 <div class="content">
 <h2>Welcome!</h2>
 <p class="text">Login to continue.</p>
-
 <%= form_with model: @user, url: users_path, method: :post do |f| %>
-  <div class="field-email">
-    <%= f.label :email %>
-    <%= f.email_field :email, placeholder: 'example@email.com', required: true, autocomplete: 'off', autofocus: 'autofocus'%>
+
+  <div class="field1">
+
+    <div class = "entryarea">
+    <%= f.email_field :email ,id: 'user_email', required: true, autocomplete: 'off', autofocus: 'autofocus', data: { placeholder: 'example@gmail.com' }%>
+    <%= f.label :email, class: 'floating-label', id: 'floating-label-username'%>
+    </div>
+
+    <div class="error-message" id="email-error">Email is required.</div>
+
   </div>
+
   <div class="field">
-    <%= f.label :password %>
-    <%= f.password_field :password%>
-  </div>
+  <div class = "entryarea">
+    <%= f.password_field :password, placeholder: '', id: 'user_password'%>
+    <%= f.label :password, class: 'floating-label', id: 'floating-label-password', placeholder: 'Password' %>
+    </div>
+  <div class="error-message" id="password-error">Password is required.</div>
+</div>
+
+  <p class="f-pass">Forgot password?</p>
   <div class="actions">
-    <%= f.submit "Log In" %>
+    <%= f.submit "Log in" %>
   </div>
 <% end %>
+<div class="options">
+  <hr />
+  <p>Or log in with</p>
+  <hr />
+</div>
+
+<div class="buttons">
+<button class="google">
+<%= image_tag('google.png', alt: 'logo Image', class: 'btn-logo') %>
+<span>Google</span>
+</button>
+<button class="fb">
+<%= image_tag('fb.svg', alt: 'logo Image', class: 'btn-logo') %>
+<span>Facebook</span>
+</button>
+
+<button class="apple">
+<%= image_tag('apple.png', alt: 'logo Image', class: 'btn-logo') %>
+<span>Apple</span>
+</button>
+
+</div>
+
+<p class="new-acc">Dont have an account yet?<span class="new-account">Create a new account</span></p>
 </div>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Log in | Derivorder.com</title>
+    <title>Log in | Deriv.com</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,7 +9,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
+
   <body>
+  <header>
+  <div>
+<%= image_tag('logo.svg', alt: 'logo Image', class: 'logo') %>
+</div>
+  </header>
     <%= yield %>
   </body>
 </html>
