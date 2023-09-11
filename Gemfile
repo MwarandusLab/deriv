@@ -1,12 +1,10 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-
 ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.7", ">= 7.0.7.2"
-
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -58,12 +56,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-gem 'capistrano', '~> 3.17'
-  gem 'capistrano-rails', '~> 1.6', '>= 1.6.2'
-  gem 'capistrano-passenger', '~> 0.2.1'
-  gem 'capistrano-rbenv', '~> 2.2'
-  gem 'ed25519', '~> 1.3'
-  gem 'bcrypt_pbkdf', '~> 1.1'
+
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
