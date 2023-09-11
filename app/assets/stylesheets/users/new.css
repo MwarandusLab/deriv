@@ -259,3 +259,11 @@ button span {
   height: 40px;
   /* line-height: 80px; */
 }
+
+
+@media screen and (max-width: 768px) {
+  .custom-wrapper {
+    width: 75%; 
+    margin: 0 auto;/* Adjust width for small screens */
+  }
+}
