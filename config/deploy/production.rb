@@ -1,0 +1,1 @@
+server '64.227.160.150', user: 'deriv', roles: %w{app db web}
