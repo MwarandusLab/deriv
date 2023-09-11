@@ -65,7 +65,7 @@ input[type="submit"] {
 
 }
 
-input[type="email"], input[type="password" i] {
+input[type="email"], input[type="password" i], input[type="text"] {
   position: absolute;
   width: 100%;
   padding: 10px;
@@ -80,11 +80,14 @@ input[type="email"], input[type="password" i] {
 }
 
 input[type="email"]:hover,
+input[type="text"]:hover
 input[type="password" i]:hover,
 input[type="password" i]:focus,
+input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password" i] :valid,
-input[type="email"] :valid {
+input[type="text"]:valid,
+input[type="email"]:valid {
   font-weight: 300;
   border: 1px solid #333333;
   color: #333333;
@@ -92,8 +95,10 @@ input[type="email"] :valid {
 }
 
 input[type="email"]:focus + .floating-label,
+input[type="text"]:focus + .floating-label,
 input[type="password" i]:focus + .floating-label,
-input[type="email"] :valid + .floating-label,
+input[type="email"]:valid + .floating-label,
+input[type="text"]:valid + .floating-label,
 input[type="password" i] :valid + .floating-label {
   height: 30px;
   transform: translate(-10px, -20px) scale(0.7);
@@ -101,8 +106,10 @@ input[type="password" i] :valid + .floating-label {
 }
 
 input[type="email"]:not(:placeholder-shown) + .floating-label,
+input[type="text"]:not(:placeholder-shown) + .floating-label,
 input[type="password" i]:not(:placeholder-shown) + .floating-label,
 input[type="email"] :valid + .floating-label,
+input[type="text"] :valid + .floating-label,
 input[type="password" i] :valid + .floating-label {
   height: 30px;
   transform: translate(-10px, -20px) scale(0.7);
@@ -120,6 +127,20 @@ input[type="password" i] :valid + .floating-label {
   font-size: 14px;
 }
 
+
+.eye-icon {
+  position: absolute;
+  top: 30%;
+  right: 4%;
+  z-index: 5555;
+  cursor: pointer;
+  width: 20px;
+  color: #999;
+}
+
+#closed-eye {
+  display: none;
+}
 
 .f-pass {
   font-size: 14px;

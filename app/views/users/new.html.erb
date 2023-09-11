@@ -19,13 +19,18 @@
   <div class = "entryarea">
     <%= f.password_field :password, placeholder: '', id: 'user_password'%>
     <%= f.label :password, class: 'floating-label', id: 'floating-label-password', placeholder: 'Password' %>
+    <div class="eye-icon-container">
+   
+<%= image_tag('open-eye.svg', id: 'showPassword', class: 'eye-icon', alt: 'Hide Password') %>
+<%= image_tag('closed-eye.svg', id: 'hidePassword', class: 'eye-icon', alt: 'Hide Password') %>
+    </div>
     </div>
   <div class="error-message" id="password-error">Password is required.</div>
 </div>
 
   <p class="f-pass">Forgot password?</p>
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", id: 'submitButton' %>
   </div>
 <% end %>
 <div class="options">
