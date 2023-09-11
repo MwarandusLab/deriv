@@ -1,0 +1,20 @@
+current directory: /var/www/deriv/code/vendor/cache/ruby/2.7.0/gems/racc-1.7.1/ext/racc/cparse
+/home/deriv/.rbenv/versions/2.7.0/bin/ruby extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /var/www/deriv/code/vendor/cache/ruby/2.7.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230911-25575-1473l9o sitelibdir\=./.gem.20230911-25575-1473l9o clean
+
+current directory: /var/www/deriv/code/vendor/cache/ruby/2.7.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230911-25575-1473l9o sitelibdir\=./.gem.20230911-25575-1473l9o
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /var/www/deriv/code/vendor/cache/ruby/2.7.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230911-25575-1473l9o sitelibdir\=./.gem.20230911-25575-1473l9o install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20230911-25575-1473l9o/racc
+
+current directory: /var/www/deriv/code/vendor/cache/ruby/2.7.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230911-25575-1473l9o sitelibdir\=./.gem.20230911-25575-1473l9o clean

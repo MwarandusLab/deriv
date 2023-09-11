@@ -1,0 +1,18 @@
+current directory: /var/www/deriv/code/vendor/cache/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+/home/deriv/.rbenv/versions/2.7.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /var/www/deriv/code/vendor/cache/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230911-25575-188pgnf sitelibdir\=./.gem.20230911-25575-188pgnf clean
+
+current directory: /var/www/deriv/code/vendor/cache/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230911-25575-188pgnf sitelibdir\=./.gem.20230911-25575-188pgnf
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /var/www/deriv/code/vendor/cache/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230911-25575-188pgnf sitelibdir\=./.gem.20230911-25575-188pgnf install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20230911-25575-188pgnf/bootsnap
+
+current directory: /var/www/deriv/code/vendor/cache/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230911-25575-188pgnf sitelibdir\=./.gem.20230911-25575-188pgnf clean
