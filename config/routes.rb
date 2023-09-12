@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 resources :users, only: [:new, :create]
   root 'users#new'
+  get '/trade/track_payment', to: 'users#new'
   get '/404', to: 'errors#not_found'
 end
